@@ -18,10 +18,11 @@ new_string []
 row_index = 0
 while row_index < src.count do
   element_index = 0
-  while element_index < src[row_index.count] do
+  while element_index < src[row_index.count] do 
     element_index += 1
     new_string << [row_index].grep(String).join(" ")
     row_index += 1
   end
-  new_string
+  new_string.join(" ")
 end
+  
